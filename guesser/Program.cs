@@ -14,7 +14,27 @@ namespace guesser
 
         static void Main(string[] args)
         {
-            /* TO DO: here is where you add your code! */
+         string[] Clues = new string[] { "", "It is an old danish name", "it is almost instinct", "A couple of years ago someone would give 10,000kr if a pair of parents would call their child this name", "It starts with P", "It ends on N", "It has the danish word for leg in it", "ooh come on man", "It also have Pre", "You have to try harder", "It starts with Pr and ends on ben" };
+
+        Console.WriteLine("Welcome to the guessing game!");
+            Console.WriteLine("I am thinking of a name, and you have to guess it! You have 10 tries");
+            for (int i = 1; i <= MaxTrials; i++)
+            {
+                if (Console.ReadLine() == "Preben" )
+                {
+                    Console.WriteLine("Good Job you guessed the name!");
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("HAHAHAHA you guessed wrong!");
+                    Console.WriteLine("sorry.... Guess again");
+                    Console.WriteLine(Clues[i]);
+                }
+                Console.WriteLine("You have " + (MaxTrials - i) + " tries left");
+            }
+
+            Console.ReadLine();
         }
     }
 }
