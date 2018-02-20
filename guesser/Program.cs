@@ -34,7 +34,7 @@ namespace guesser
                 Console.WriteLine("You have " + (MaxTrials - i) + " tries left");
                 if (i == MaxTrials )
                 {
-                    Console.WriteLine("Damn it you used all of your tries! the right answer was Preben!!");
+                    Console.WriteLine("Damn it! you used all of your tries! the right answer was Preben!!");
                 }
             }
 
